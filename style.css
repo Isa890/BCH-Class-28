@@ -1,0 +1,38 @@
+/* Carousel */
+@media screen and (max-width:768px) {
+    .cl{
+        width: 450px;
+        height: auto;
+    }
+}
+
+/* Cards */
+.cd{
+    /* padding-bottom: 20px; */
+    /* padding-top: 5px; */
+    display:flex;
+}
+@media screen and (max-width:768px) {
+    .cd{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        display:inline-block;
+    }
+    .card{
+        margin-left: 10px;
+    }
+}       
+
+@media (min-width:769) and (max-width:1280px) {
+    .cd{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 200px;
+        display: flex;
+    }
+}
+/* Footer */
+.ft{
+    margin-top: 20px;
+}
