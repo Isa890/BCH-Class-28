@@ -11,7 +11,10 @@
   />
     <link rel="stylesheet" href="bootstrap.css">
 </head>
+
 <body>
+</div>
+  <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="/Images/nsbs-removebg-preview.png" alt="" width="40px"> <img src="/Images/lautech-removebg-preview.png" alt="" width="40px" style="margin-bottom: 4px;"></a>
@@ -24,16 +27,32 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Admin</a>
+          <a class="nav-link" href="#">Blog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reps</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Timetable</a>
+          <a class="nav-link" href="/programme.html">Programme of Studies</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/Resources.html">Resources</a>
+        </li>
+        <li>
+          <button type="button" class="btn btn-primary" id="liveToastBtn">Update</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="/Images/nsbs-removebg-preview.png" class="rounded me-2" alt="..." width="20px">
+      <strong class="me-auto">BCH Class '28</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, Metabolites! Welcome to another metabolic day.
+    </div>
+  </div>
+      </div>
         </li>
         </ul>
     </div>
@@ -44,13 +63,13 @@
   <div class="row gx-5">
     <div class="col">
       <div class="p-3">
-        <h1>Welcome Metabolites</h1>
-        <h3>Making the world a home of refuge</h3>
+        <h1 class="text-light">Welcome Metabolites</h1>
+        <h5 class="text-light">A Guiding Culture for Science, Discovery, and Impact</h5>
       </div>
     </div>
     <div class="col">
       <div class="p-3">
-        <video src="/Video/landing page vid.mp4" playinline autoplay loop width="250px"></video>
+        <video src="/Video/landing page vid.mp4" autoplay loop width="250px"></video>
       </div>
   </div>
 </div>
@@ -59,14 +78,14 @@
   <div class="row gx-5">
     <div class="col">
       <div class="p-3">
-        <h1>HISTORY OF BIOCHEMISTRY</h1>
+        <h1 class="text-light">HISTORY OF BIOCHEMISTRY</h1>
         <p>The history of biochemistry is the story of how science uncovered the chemical processes that sustain life. It's a journey that blends chemistry, biology, medicine, and physics—and it dates back centuries. Here's a concise but insightful timeline...</p>
         <button type="button" class="btn btn-outline-danger">Read more</button>
       </div>
     </div>
     <div class="col">
       <div class="p-3">
-        <img src="/Images/History of BCH.png" alt="" width="250px">
+        <img src="/Images/History of BCH.png" alt="History of BCH" width="250px">
       </div>
   </div>
 </div>
@@ -75,7 +94,7 @@
   <div class="row gx-5">
     <div class="col">
       <div class="p-2">
-        <h1>CAREER PROSPECTS IN BIOCHEMISTRY</h1>
+        <h1 class="text-light">CAREER PROSPECTS IN BIOCHEMISTRY</h1>
         <p>Biochemistry opens the door to exciting careers at the intersection of science, innovation, and impact. Whether you're passionate about research, healthcare, communication, or entrepreneurship, the field offers a wide range of pathways...</p>
         <button type="button" class="btn btn-outline-danger">Read more</button>
       </div>
@@ -91,7 +110,7 @@
   <div class="row gx-3">
     <div class="col">
       <div class="p-2">
-        <h1>JOB OPPORTUNITY IN BIOCHEMISTRY</h1>
+        <h1 class="text-light">JOB OPPORTUNITY IN BIOCHEMISTRY</h1>
         <p>Biochemistry opens the door to exciting careers at the intersection of science, innovation, and impact. Whether you're passionate about research, healthcare, communication, or entrepreneurship, the field offers a wide range of pathways...</p>
         <button type="button" class="btn btn-outline-danger">Read more</button>
       </div>
@@ -102,23 +121,58 @@
       </div>
   </div>
 </div>
-<!-- Footer -->
- <div class="ft">
-  <div class="card text-center">
-    <div class="card-header">
-      METABOLITES
+<div>
+  <div class="container px-4 overflow-hidden mt-4">
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-2">
+        <center><h1 class="text-light">Biochemist Code</h1></center>
+        <hr>
+        <h1 class="text-light">1. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjQ5NiAzLjUyNWgtLjI1djcuMjVjMCAuNDEtLjM0Ljc1LS43NS43NXMtLjc1LS4zNC0uNzUtLjc1di0xLjI1aC02LjV2OS4yNWMwIDEuNzkgMS40NiAzLjI1IDMuMjUgMy4yNXMzLjI1LTEuNDYgMy4yNS0zLjI1YzAtLjQxLjM0LS43NS43NS0uNzVzLjc1LjM0Ljc1Ljc1YzAgMi42Mi0yLjEzIDQuNzUtNC43NSA0Ljc1cy00Ljc1LTIuMTMtNC43NS00Ljc1VjMuNTI1aC0uMjVjLS40MSAwLS43NS0uMzQtLjc1LS43NXMuMzQtLjc1Ljc1LS43NWgxMGMuNDEgMCAuNzUuMzQuNzUuNzVzLS4zNC43NS0uNzUuNzVtLTguMjUgNC41aDYuNXYtNC41aC02LjV6bTkuMDUgMTAuNTFjLjExLjI5LjM5LjQ5LjcuNDl2LjAxYy4zMSAwIC41OS0uMi43LS40OWwuMjYtLjdjLjMyLS44Ni40Ni0xLjIyLjY3LTEuNDNzLjU3LS4zNSAxLjQ0LS42N2wuNy0uMjZjLjI5LS4xMS40OS0uMzkuNDktLjdzLS4yLS41OS0uNDktLjdsLS43LS4yNmMtLjg2LS4zMi0xLjIyLS40Ni0xLjQzLS42N3MtLjM1LS41Ny0uNjctMS40NGwtLjI2LS43YS43Ni43NiAwIDAgMC0uNy0uNDljLS4zMSAwLS41OS4yLS43LjQ5bC0uMjYuN2MtLjMyLjg2LS40NiAxLjIyLS42NyAxLjQzcy0uNTcuMzUtMS40NC42N2wtLjcuMjZjLS4yOS4xMS0uNDkuMzktLjQ5LjdzLjIuNTkuNDkuN2wuNy4yNmMuODYuMzIgMS4yMi40NiAxLjQzLjY3Yy4yMS4yLjM1LjU2LjY3IDEuNDN6bS4xMy0zLjE4Yy0uMjQtLjI0LS41LS40MS0uODUtLjU3Yy4zNC0uMTYuNjEtLjMzLjg1LS41N3MuNDEtLjUxLjU3LS44NWMuMTYuMzQuMzMuNjEuNTcuODVzLjUxLjQxLjg1LjU3Yy0uMzUuMTYtLjYxLjMzLS44NS41N3MtLjQxLjUxLS41Ny44NWMtLjE2LS4zNS0uMzMtLjYxLS41Ny0uODUiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Curiosity Leads Us:</b> <p class="text-light">
+          We ask questions that unlock the secrets of life. We are driven by a deep desire to under the molecular foundations of living systems from cells to communities
+        </p>
+        <hr>
+        <h1 class="text-light">2. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTUuNDA2IDIzLjUyNmg4LjU3Yy40MSAwIC43NS0uMzQuNzUtLjc1cy0uMzQtLjc1LS43NS0uNzVoLTguNTljLS45MiAwLTEuNjYtLjc1LTEuNjYtMS42NmMwLS4yNy4wNy0uNTMuMTktLjc3bDMuNDQzLTYuNTdoNy4yNTJsLjIxNS40MWMuMTkuMzcuNjQuNTEgMS4wMS4zMnMuNTEtLjY0LjMyLTEuMDFsLTEuOTEtMy42NnYtNS41NmguNzVjLjQxIDAgLjc1LS4zNC43NS0uNzVzLS4zNC0uNzUtLjc1LS43NUgxMy42MmExIDEgMCAwIDAtLjEyMy0uMDFoLTVhMSAxIDAgMCAwLS4xMjIuMDFINi45OTZjLS40MSAwLS43NS4zNC0uNzUuNzVzLjM0Ljc1Ljc1Ljc1aC43NXY1LjU2bC01LjE0IDkuODFhMy4xNjcgMy4xNjcgMCAwIDAgMi44IDQuNjNtMy43NC0xMy45MWwtMS4wMDEgMS45MWg1LjY4MWwtMS0xLjkxYS43My43MyAwIDAgMS0uMDktLjM1di01Ljc0aC0zLjV2NS43NGMwIC4xMi0uMDMuMjQtLjA5LjM1bTcuNjUgMTMuNDJjLjExLjI5LjM5LjQ5LjcuNDl2LjAxYy4zMSAwIC41OS0uMi43LS40OWwuMjYtLjdjLjMyLS44Ni40Ni0xLjIyLjY3LTEuNDNzLjU3LS4zNSAxLjQ0LS42N2wuNy0uMjZjLjI5LS4xMS40OS0uMzkuNDktLjdzLS4yLS41OS0uNDktLjdsLS43LS4yNmMtLjg2LS4zMi0xLjIyLS40Ni0xLjQzLS42N3MtLjM1LS41Ny0uNjctMS40NGwtLjI2LS43YS43Ni43NiAwIDAgMC0uNy0uNDljLS4zMSAwLS41OS4yLS43LjQ5bC0uMjYuN2MtLjMyLjg2LS40NiAxLjIyLS42NyAxLjQzcy0uNTcuMzUtMS40NC42N2wtLjcuMjZjLS4yOS4xMS0uNDkuMzktLjQ5LjdzLjIuNTkuNDkuN2wuNy4yNmMuODYuMzIgMS4yMi40NiAxLjQzLjY3Yy4yMS4yLjM1LjU2LjY3IDEuNDN6bS4xMy0zLjE4Yy0uMjQtLjI0LS41LS40MS0uODUtLjU3Yy4zNC0uMTYuNjEtLjMzLjg1LS41N3MuNDEtLjUxLjU3LS44NWMuMTYuMzQuMzMuNjEuNTcuODVzLjUxLjQxLjg1LjU3Yy0uMzUuMTYtLjYxLjMzLS44NS41N3MtLjQxLjUxLS41Ny44NWMtLjE2LS4zNS0uMzMtLjYxLS41Ny0uODUiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Curiosity Leads Us:</b> <p class="text-light">
+           We ask questions that unlock the secrets of life. We are driven by a deep desire to under the molecular foundations of living systems from cells to communities
+        </p>
+        <hr>
+        <h1 class="text-light">3. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuNSAzLjUxNmguNzV2NC4xN2MtMy4wMSAxLjI5LTUgNC4yOC01IDcuNTljMCA0LjU1IDMuNyA4LjI1IDguMjUgOC4yNWMxLjEzIDAgMi4yNC0uMjMgMy4zLS42OWMuMzktLjE3LjU2LS42MS4zOS0uOTlhLjc0My43NDMgMCAwIDAtLjk5LS4zOXEtMS4zMDUuNTctMi43LjU3Yy0zLjcyIDAtNi43NS0zLjAzLTYuNzUtNi43NWMwLS45NjkuMjA3LTEuOTAyLjU4Ni0yLjc1aDEyLjMzMnEuMDY5LjE1Ny4xMzIuMzJjLjE1LjM5LjU4LjU4Ljk3LjQzcy41OC0uNTguNDMtLjk3YTguMiA4LjIgMCAwIDAtNC40NS00LjYydi00LjE3aC43NWMuNDEgMCAuNzUtLjM0Ljc1LS43NXMtLjM0LS43NS0uNzUtLjc1aC04Yy0uNDEgMC0uNzUuMzQtLjc1Ljc1cy4zNC43NS43NS43NW05LjI1IDcuNTFhNi43NiA2Ljc2IDAgMCAwLTMtMi4xMmMtLjMtLjExLS41LS4zOS0uNS0uNzF2LTQuNjhoLTMuNXY0LjY4YzAgLjMyLS4yLjYtLjUuNzFhNi43MyA2LjczIDAgMCAwLTIuOTk1IDIuMTJ6bTEuMDUgMTIuMDFjLjEuMjkuMzkuNDkuNy40OXYuMDFjLjMxIDAgLjU5LS4yLjctLjQ5bC4yNi0uN2MuMzEtLjg1LjQ1LTEuMjMuNjYtMS40NHMuNTctLjM1IDEuNDMtLjY3bC43LS4yNWMuMy0uMTEuNS0uMzguNS0uN3MtLjItLjYtLjQ5LS43MWwtLjctLjI2Yy0uODctLjMyLTEuMjMtLjQ2LTEuNDMtLjY2Yy0uMjEtLjIyLS4zNi0uNi0uNjctMS40NWwtLjI2LS42OWEuNzQuNzQgMCAwIDAtLjctLjQ5Yy0uMzEgMC0uNTkuMi0uNy40OWwtLjI2LjY5Yy0uMzEuODUtLjQ1IDEuMjMtLjY2IDEuNDRzLS41Ny4zNS0xLjQ0LjY3bC0uNy4yNmMtLjMuMTEtLjUuNC0uNDkuNzFzLjIuNTkuNS43bC42OS4yNWMuODcuMzIgMS4yMy40NiAxLjQzLjY2Yy4yMS4yMi4zNi42LjY3IDEuNDR6bS4xMi0zLjIxYy0uMjMtLjIzLS41LS40LS44NC0uNTZjLjM0LS4xNi42MS0uMzMuODUtLjU3Yy4yMy0uMjQuNC0uNTEuNTYtLjg1Yy4xNi4zNC4zMy42MS41Ny44NmMuMjMuMjMuNS40Ljg0LjU2Yy0uMzQuMTYtLjYxLjMzLS44NS41N2MtLjIzLjI0LS40LjUxLS41Ni44NWMtLjE2LS4zNC0uMzMtLjYyLS41Ny0uODYiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Precision Shapes Our Practice:</b> <p class="text-light">
+        Every experiment counts. Every result matters. We upload accuracy in technique, data, and analysis to ensure meaningful discoveries
+        </p>
+        <hr>
+        <h1 class="text-light">4. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjQ5NiAzLjUyNWgtLjI1djcuMjVjMCAuNDEtLjM0Ljc1LS43NS43NXMtLjc1LS4zNC0uNzUtLjc1di0xLjI1aC02LjV2OS4yNWMwIDEuNzkgMS40NiAzLjI1IDMuMjUgMy4yNXMzLjI1LTEuNDYgMy4yNS0zLjI1YzAtLjQxLjM0LS43NS43NS0uNzVzLjc1LjM0Ljc1Ljc1YzAgMi42Mi0yLjEzIDQuNzUtNC43NSA0Ljc1cy00Ljc1LTIuMTMtNC43NS00Ljc1VjMuNTI1aC0uMjVjLS40MSAwLS43NS0uMzQtLjc1LS43NXMuMzQtLjc1Ljc1LS43NWgxMGMuNDEgMCAuNzUuMzQuNzUuNzVzLS4zNC43NS0uNzUuNzVtLTguMjUgNC41aDYuNXYtNC41aC02LjV6bTkuMDUgMTAuNTFjLjExLjI5LjM5LjQ5LjcuNDl2LjAxYy4zMSAwIC41OS0uMi43LS40OWwuMjYtLjdjLjMyLS44Ni40Ni0xLjIyLjY3LTEuNDNzLjU3LS4zNSAxLjQ0LS42N2wuNy0uMjZjLjI5LS4xMS40OS0uMzkuNDktLjdzLS4yLS41OS0uNDktLjdsLS43LS4yNmMtLjg2LS4zMi0xLjIyLS40Ni0xLjQzLS42N3MtLjM1LS41Ny0uNjctMS40NGwtLjI2LS43YS43Ni43NiAwIDAgMC0uNy0uNDljLS4zMSAwLS41OS4yLS43LjQ5bC0uMjYuN2MtLjMyLjg2LS40NiAxLjIyLS42NyAxLjQzcy0uNTcuMzUtMS40NC42N2wtLjcuMjZjLS4yOS4xMS0uNDkuMzktLjQ5LjdzLjIuNTkuNDkuN2wuNy4yNmMuODYuMzIgMS4yMi40NiAxLjQzLjY3Yy4yMS4yLjM1LjU2LjY3IDEuNDN6bS4xMy0zLjE4Yy0uMjQtLjI0LS41LS40MS0uODUtLjU3Yy4zNC0uMTYuNjEtLjMzLjg1LS41N3MuNDEtLjUxLjU3LS44NWMuMTYuMzQuMzMuNjEuNTcuODVzLjUxLjQxLjg1LjU3Yy0uMzUuMTYtLjYxLjMzLS44NS41N3MtLjQxLjUxLS41Ny44NWMtLjE2LS4zNS0uMzMtLjYxLS41Ny0uODUiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Collaboration Strengthens Us:</b> <p class="text-light">
+          Science thrives through shared ideas. We work across disciplines and cultures - biologists, chemists, engineer, and communicators-united in purpose
+        </p>
+        <hr>
+        <h1 class="text-light">5. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTUuNDA2IDIzLjUyNmg4LjU3Yy40MSAwIC43NS0uMzQuNzUtLjc1cy0uMzQtLjc1LS43NS0uNzVoLTguNTljLS45MiAwLTEuNjYtLjc1LTEuNjYtMS42NmMwLS4yNy4wNy0uNTMuMTktLjc3bDMuNDQzLTYuNTdoNy4yNTJsLjIxNS40MWMuMTkuMzcuNjQuNTEgMS4wMS4zMnMuNTEtLjY0LjMyLTEuMDFsLTEuOTEtMy42NnYtNS41NmguNzVjLjQxIDAgLjc1LS4zNC43NS0uNzVzLS4zNC0uNzUtLjc1LS43NUgxMy42MmExIDEgMCAwIDAtLjEyMy0uMDFoLTVhMSAxIDAgMCAwLS4xMjIuMDFINi45OTZjLS40MSAwLS43NS4zNC0uNzUuNzVzLjM0Ljc1Ljc1Ljc1aC43NXY1LjU2bC01LjE0IDkuODFhMy4xNjcgMy4xNjcgMCAwIDAgMi44IDQuNjNtMy43NC0xMy45MWwtMS4wMDEgMS45MWg1LjY4MWwtMS0xLjkxYS43My43MyAwIDAgMS0uMDktLjM1di01Ljc0aC0zLjV2NS43NGMwIC4xMi0uMDMuMjQtLjA5LjM1bTcuNjUgMTMuNDJjLjExLjI5LjM5LjQ5LjcuNDl2LjAxYy4zMSAwIC41OS0uMi43LS40OWwuMjYtLjdjLjMyLS44Ni40Ni0xLjIyLjY3LTEuNDNzLjU3LS4zNSAxLjQ0LS42N2wuNy0uMjZjLjI5LS4xMS40OS0uMzkuNDktLjdzLS4yLS41OS0uNDktLjdsLS43LS4yNmMtLjg2LS4zMi0xLjIyLS40Ni0xLjQzLS42N3MtLjM1LS41Ny0uNjctMS40NGwtLjI2LS43YS43Ni43NiAwIDAgMC0uNy0uNDljLS4zMSAwLS41OS4yLS43LjQ5bC0uMjYuN2MtLjMyLjg2LS40NiAxLjIyLS42NyAxLjQzcy0uNTcuMzUtMS40NC42N2wtLjcuMjZjLS4yOS4xMS0uNDkuMzktLjQ5LjdzLjIuNTkuNDkuN2wuNy4yNmMuODYuMzIgMS4yMi40NiAxLjQzLjY3Yy4yMS4yLjM1LjU2LjY3IDEuNDN6bS4xMy0zLjE4Yy0uMjQtLjI0LS41LS40MS0uODUtLjU3Yy4zNC0uMTYuNjEtLjMzLjg1LS41N3MuNDEtLjUxLjU3LS44NWMuMTYuMzQuMzMuNjEuNTcuODVzLjUxLjQxLjg1LjU3Yy0uMzUuMTYtLjYxLjMzLS44NS41N3MtLjQxLjUxLS41Ny44NWMtLjE2LS4zNS0uMzMtLjYxLS41Ny0uODUiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Impact Guides Our Vision:</b><p class="text-light">
+           From the lab bench to the world. We seek to solve problems in health, food, energy, and environment through innovative biochemical solutions.
+        </p>
+      </div>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">We are envisioned to change the climax of our world through analyzing and producing biochemical products</p>
-      <p class="card-text">Metabolism, Synthesis, Forensic, Pharmaceutical, Research, Drug discovery</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    <div class="card-footer text-body-secondary">
-      Copyright @2025
-    </div>
+    <div class="col">
+      <div class="p-2 mt-5">
+        <hr>
+        <h1 class="text-light">6. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuNSAzLjUxNmguNzV2NC4xN2MtMy4wMSAxLjI5LTUgNC4yOC01IDcuNTljMCA0LjU1IDMuNyA4LjI1IDguMjUgOC4yNWMxLjEzIDAgMi4yNC0uMjMgMy4zLS42OWMuMzktLjE3LjU2LS42MS4zOS0uOTlhLjc0My43NDMgMCAwIDAtLjk5LS4zOXEtMS4zMDUuNTctMi43LjU3Yy0zLjcyIDAtNi43NS0zLjAzLTYuNzUtNi43NWMwLS45NjkuMjA3LTEuOTAyLjU4Ni0yLjc1aDEyLjMzMnEuMDY5LjE1Ny4xMzIuMzJjLjE1LjM5LjU4LjU4Ljk3LjQzcy41OC0uNTguNDMtLjk3YTguMiA4LjIgMCAwIDAtNC40NS00LjYydi00LjE3aC43NWMuNDEgMCAuNzUtLjM0Ljc1LS43NXMtLjM0LS43NS0uNzUtLjc1aC04Yy0uNDEgMC0uNzUuMzQtLjc1Ljc1cy4zNC43NS43NS43NW05LjI1IDcuNTFhNi43NiA2Ljc2IDAgMCAwLTMtMi4xMmMtLjMtLjExLS41LS4zOS0uNS0uNzF2LTQuNjhoLTMuNXY0LjY4YzAgLjMyLS4yLjYtLjUuNzFhNi43MyA2LjczIDAgMCAwLTIuOTk1IDIuMTJ6bTEuMDUgMTIuMDFjLjEuMjkuMzkuNDkuNy40OXYuMDFjLjMxIDAgLjU5LS4yLjctLjQ5bC4yNi0uN2MuMzEtLjg1LjQ1LTEuMjMuNjYtMS40NHMuNTctLjM1IDEuNDMtLjY3bC43LS4yNWMuMy0uMTEuNS0uMzguNS0uN3MtLjItLjYtLjQ5LS43MWwtLjctLjI2Yy0uODctLjMyLTEuMjMtLjQ2LTEuNDMtLjY2Yy0uMjEtLjIyLS4zNi0uNi0uNjctMS40NWwtLjI2LS42OWEuNzQuNzQgMCAwIDAtLjctLjQ5Yy0uMzEgMC0uNTkuMi0uNy40OWwtLjI2LjY5Yy0uMzEuODUtLjQ1IDEuMjMtLjY2IDEuNDRzLS41Ny4zNS0xLjQ0LjY3bC0uNy4yNmMtLjMuMTEtLjUuNC0uNDkuNzFzLjIuNTkuNS43bC42OS4yNWMuODcuMzIgMS4yMy40NiAxLjQzLjY2Yy4yMS4yMi4zNi42LjY3IDEuNDR6bS4xMi0zLjIxYy0uMjMtLjIzLS41LS40LS44NC0uNTZjLjM0LS4xNi42MS0uMzMuODUtLjU3Yy4yMy0uMjQuNC0uNTEuNTYtLjg1Yy4xNi4zNC4zMy42MS41Ny44NmMuMjMuMjMuNS40Ljg0LjU2Yy0uMzQuMTYtLjYxLjMzLS44NS41N2MtLjIzLjI0LS40LjUxLS41Ni44NWMtLjE2LS4zNC0uMzMtLjYyLS41Ny0uODYiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Innovation Inspires Us:</b> <p class="text-light">
+          We embrace new tools, technologies, and perspectives. AI, Synthetic biology, nanotechnology-today;s tools for tomorrow;s breakthroughs.
+        </p>
+        <hr>
+        <h1 class="text-light">7. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjQ5NiAzLjUyNWgtLjI1djcuMjVjMCAuNDEtLjM0Ljc1LS43NS43NXMtLjc1LS4zNC0uNzUtLjc1di0xLjI1aC02LjV2OS4yNWMwIDEuNzkgMS40NiAzLjI1IDMuMjUgMy4yNXMzLjI1LTEuNDYgMy4yNS0zLjI1YzAtLjQxLjM0LS43NS43NS0uNzVzLjc1LjM0Ljc1Ljc1YzAgMi42Mi0yLjEzIDQuNzUtNC43NSA0Ljc1cy00Ljc1LTIuMTMtNC43NS00Ljc1VjMuNTI1aC0uMjVjLS40MSAwLS43NS0uMzQtLjc1LS43NXMuMzQtLjc1Ljc1LS43NWgxMGMuNDEgMCAuNzUuMzQuNzUuNzVzLS4zNC43NS0uNzUuNzVtLTguMjUgNC41aDYuNXYtNC41aC02LjV6bTkuMDUgMTAuNTFjLjExLjI5LjM5LjQ5LjcuNDl2LjAxYy4zMSAwIC41OS0uMi43LS40OWwuMjYtLjdjLjMyLS44Ni40Ni0xLjIyLjY3LTEuNDNzLjU3LS4zNSAxLjQ0LS42N2wuNy0uMjZjLjI5LS4xMS40OS0uMzkuNDktLjdzLS4yLS41OS0uNDktLjdsLS43LS4yNmMtLjg2LS4zMi0xLjIyLS40Ni0xLjQzLS42N3MtLjM1LS41Ny0uNjctMS40NGwtLjI2LS43YS43Ni43NiAwIDAgMC0uNy0uNDljLS4zMSAwLS41OS4yLS43LjQ5bC0uMjYuN2MtLjMyLjg2LS40NiAxLjIyLS42NyAxLjQzcy0uNTcuMzUtMS40NC42N2wtLjcuMjZjLS4yOS4xMS0uNDkuMzktLjQ5LjdzLjIuNTkuNDkuN2wuNy4yNmMuODYuMzIgMS4yMi40NiAxLjQzLjY3Yy4yMS4yLjM1LjU2LjY3IDEuNDN6bS4xMy0zLjE4Yy0uMjQtLjI0LS41LS40MS0uODUtLjU3Yy4zNC0uMTYuNjEtLjMzLjg1LS41N3MuNDEtLjUxLjU3LS44NWMuMTYuMzQuMzMuNjEuNTcuODVzLjUxLjQxLjg1LjU3Yy0uMzUuMTYtLjYxLjMzLS44NS41N3MtLjQxLjUxLS41Ny44NWMtLjE2LS4zNS0uMzMtLjYxLS41Ny0uODUiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Lifelong Learning Defines Us:</b> <p class="text-light">
+           Science is always evolving-and so are we. We commit to continuous growth through study, mentorship, and reflection.
+        </p>
+        <hr>
+        <h1 class="text-light">8. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTUuNDA2IDIzLjUyNmg4LjU3Yy40MSAwIC43NS0uMzQuNzUtLjc1cy0uMzQtLjc1LS43NS0uNzVoLTguNTljLS45MiAwLTEuNjYtLjc1LTEuNjYtMS42NmMwLS4yNy4wNy0uNTMuMTktLjc3bDMuNDQzLTYuNTdoNy4yNTJsLjIxNS40MWMuMTkuMzcuNjQuNTEgMS4wMS4zMnMuNTEtLjY0LjMyLTEuMDFsLTEuOTEtMy42NnYtNS41NmguNzVjLjQxIDAgLjc1LS4zNC43NS0uNzVzLS4zNC0uNzUtLjc1LS43NUgxMy42MmExIDEgMCAwIDAtLjEyMy0uMDFoLTVhMSAxIDAgMCAwLS4xMjIuMDFINi45OTZjLS40MSAwLS43NS4zNC0uNzUuNzVzLjM0Ljc1Ljc1Ljc1aC43NXY1LjU2bC01LjE0IDkuODFhMy4xNjcgMy4xNjcgMCAwIDAgMi44IDQuNjNtMy43NC0xMy45MWwtMS4wMDEgMS45MWg1LjY4MWwtMS0xLjkxYS43My43MyAwIDAgMS0uMDktLjM1di01Ljc0aC0zLjV2NS43NGMwIC4xMi0uMDMuMjQtLjA5LjM1bTcuNjUgMTMuNDJjLjExLjI5LjM5LjQ5LjcuNDl2LjAxYy4zMSAwIC41OS0uMi43LS40OWwuMjYtLjdjLjMyLS44Ni40Ni0xLjIyLjY3LTEuNDNzLjU3LS4zNSAxLjQ0LS42N2wuNy0uMjZjLjI5LS4xMS40OS0uMzkuNDktLjdzLS4yLS41OS0uNDktLjdsLS43LS4yNmMtLjg2LS4zMi0xLjIyLS40Ni0xLjQzLS42N3MtLjM1LS41Ny0uNjctMS40NGwtLjI2LS43YS43Ni43NiAwIDAgMC0uNy0uNDljLS4zMSAwLS41OS4yLS43LjQ5bC0uMjYuN2MtLjMyLjg2LS40NiAxLjIyLS42NyAxLjQzcy0uNTcuMzUtMS40NC42N2wtLjcuMjZjLS4yOS4xMS0uNDkuMzktLjQ5LjdzLjIuNTkuNDkuN2wuNy4yNmMuODYuMzIgMS4yMi40NiAxLjQzLjY3Yy4yMS4yLjM1LjU2LjY3IDEuNDN6bS4xMy0zLjE4Yy0uMjQtLjI0LS41LS40MS0uODUtLjU3Yy4zNC0uMTYuNjEtLjMzLjg1LS41N3MuNDEtLjUxLjU3LS44NWMuMTYuMzQuMzMuNjEuNTcuODVzLjUxLjQxLjg1LjU3Yy0uMzUuMTYtLjYxLjMzLS44NS41N3MtLjQxLjUxLS41Ny44NWMtLjE2LS4zNS0uMzMtLjYxLS41Ny0uODUiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Resilience Builds Our Legacy:</b> <p class="text-light">
+          Setback are part of discovery. We preserve through failure, experiment again, and emerge wiser, stronger, and closer to the truth.
+        </p>
+        <hr>
+        <h1 class="text-light">9. <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuNSAzLjUxNmguNzV2NC4xN2MtMy4wMSAxLjI5LTUgNC4yOC01IDcuNTljMCA0LjU1IDMuNyA4LjI1IDguMjUgOC4yNWMxLjEzIDAgMi4yNC0uMjMgMy4zLS42OWMuMzktLjE3LjU2LS42MS4zOS0uOTlhLjc0My43NDMgMCAwIDAtLjk5LS4zOXEtMS4zMDUuNTctMi43LjU3Yy0zLjcyIDAtNi43NS0zLjAzLTYuNzUtNi43NWMwLS45NjkuMjA3LTEuOTAyLjU4Ni0yLjc1aDEyLjMzMnEuMDY5LjE1Ny4xMzIuMzJjLjE1LjM5LjU4LjU4Ljk3LjQzcy41OC0uNTguNDMtLjk3YTguMiA4LjIgMCAwIDAtNC40NS00LjYydi00LjE3aC43NWMuNDEgMCAuNzUtLjM0Ljc1LS43NXMtLjM0LS43NS0uNzUtLjc1aC04Yy0uNDEgMC0uNzUuMzQtLjc1Ljc1cy4zNC43NS43NS43NW05LjI1IDcuNTFhNi43NiA2Ljc2IDAgMCAwLTMtMi4xMmMtLjMtLjExLS41LS4zOS0uNS0uNzF2LTQuNjhoLTMuNXY0LjY4YzAgLjMyLS4yLjYtLjUuNzFhNi43MyA2LjczIDAgMCAwLTIuOTk1IDIuMTJ6bTEuMDUgMTIuMDFjLjEuMjkuMzkuNDkuNy40OXYuMDFjLjMxIDAgLjU5LS4yLjctLjQ5bC4yNi0uN2MuMzEtLjg1LjQ1LTEuMjMuNjYtMS40NHMuNTctLjM1IDEuNDMtLjY3bC43LS4yNWMuMy0uMTEuNS0uMzguNS0uN3MtLjItLjYtLjQ5LS43MWwtLjctLjI2Yy0uODctLjMyLTEuMjMtLjQ2LTEuNDMtLjY2Yy0uMjEtLjIyLS4zNi0uNi0uNjctMS40NWwtLjI2LS42OWEuNzQuNzQgMCAwIDAtLjctLjQ5Yy0uMzEgMC0uNTkuMi0uNy40OWwtLjI2LjY5Yy0uMzEuODUtLjQ1IDEuMjMtLjY2IDEuNDRzLS41Ny4zNS0xLjQ0LjY3bC0uNy4yNmMtLjMuMTEtLjUuNC0uNDkuNzFzLjIuNTkuNS43bC42OS4yNWMuODcuMzIgMS4yMy40NiAxLjQzLjY2Yy4yMS4yMi4zNi42LjY3IDEuNDR6bS4xMi0zLjIxYy0uMjMtLjIzLS41LS40LS44NC0uNTZjLjM0LS4xNi42MS0uMzMuODUtLjU3Yy4yMy0uMjQuNC0uNTEuNTYtLjg1Yy4xNi4zNC4zMy42MS41Ny44NmMuMjMuMjMuNS40Ljg0LjU2Yy0uMzQuMTYtLjYxLjMzLS44NS41N2MtLjIzLjI0LS40LjUxLS41Ni44NWMtLjE2LS4zNC0uMzMtLjYyLS41Ny0uODYiIGNvbG9yPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=" alt=""></h1><b class="text-light">Education Empowers Others:</b> <p class="text-light">
+          We don't keep science to ourselves. We tech, write, speak, and share. Biochemistry is not just a discipline-it's a story worth telling
+        </p>
+      </div>
   </div>
- </div>
+</div>
+</div>
+<!-- Footer -->
+
 <script src="/bootstrap.js"></script>
 <script src="/main.js"></script>
 </body>
